@@ -15,7 +15,6 @@ body {
   display: flex;
   width: 100vw;
   height: 100vh;
-  /* justify-content: flex-end; */
   align-items: center;
 }
 
@@ -109,4 +108,15 @@ body {
 .btn input:hover {
   background: rgba(116, 116, 175);
   transition: .3s;
+}
+
+/* RESULTADO */
+
+.result {
+  display: none;
+  margin-top: 2rem;
+}
+
+.result p {
+  font-size: 1.5rem;
 }

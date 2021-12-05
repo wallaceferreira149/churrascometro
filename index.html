@@ -11,6 +11,27 @@
   <script src="./script.js" defer></script>
 </head>
 <body>
-  
+  <main class="container">
+    <section class="main-card">
+      <h1>Churrascômetro</h1>
+      <div class="box">
+        <label for="adultos">Adultos <span id="adulto_span">10</span></label><br>
+        <input type="range" name="adultos" class="slider" min="0" max="100" value="10" oninput="upd_value(this, 'adulto_span')">
+      </div>
+
+      <div class="box">
+        <label for="criancas">Crianças <span id="crianca_span">5</span></label><br>
+        <input type="range" name="criancas" class="slider" value="5" oninput="upd_value(this, 'crianca_span')">        
+      </div>
+
+      <div class="box">
+        <label for="duracao">Duração</label><br>
+        <input type="time" name="duracao" id="duracao" value="01:00" step="1000 * 30">
+      </div>
+      <div class="btn">
+        <input type="button" value="Calcular">
+      </div>
+    </section>
+  </main>
 </body>
 </html>
